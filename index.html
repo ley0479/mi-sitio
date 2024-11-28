@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leison Palacios Blandon</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #4a90e2, #50c3c8);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Contenedor principal */
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Encabezado con animación */
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+            }
+            to {
+                text-shadow: 0 0 20px #ffdd00, 0 0 30px #ff8800;
+            }
+        }
+
+        /* Subtítulo */
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Botón interactivo */
+        .btn {
+            background-color: #ffffff;
+            color: #4a90e2;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ffdd00;
+            transform: scale(1.1);
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leison Palacios Blandon</h1>
+        <p>Bienvenido a mi sitio web</p>
+        <button class="btn" onclick="alert('¡Gracias por visitar!')">Explorar</button>
+    </div>
+</body>
+</html>
